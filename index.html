@@ -25,6 +25,8 @@
   <meta name="twitter:image" content="assets/img/youtube.jpg">
   <meta name="theme-color" content="#3590ad">
   <link rel="canonical" href="https://websites.igluonline.com">
+  <meta property="fb:app_id" content="253873004991221">
+  <meta property="fb:pages" content="663101680495099">
 
   <link rel="apple-touch-icon" href="assets/img/marca2.png">
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -67,14 +69,26 @@
 <body data-demo="true" class="one-page header-transparent footer-reveal theme-blue">
 
   <div id="fb-root"></div>
-  <script>(function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11&appId=253873004991221&autoLogAppEvents=1';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '253873004991221',
+        xfbml: true,
+        version: 'v2.6'
+      });
 
+      FB.AppEvents.logPageView();
+
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/pt_BR/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
