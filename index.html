@@ -46,6 +46,7 @@
   <link rel="stylesheet" href="assets/css/footers.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/preloader.css" />
   <link rel="stylesheet" href="assets/css/themes.css" />
   <link rel="stylesheet" href="assets/css/ui.css" />
   <script src="assets/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -70,12 +71,19 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=253873004991221&autoLogAppEvents=1';
+      js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11&appId=253873004991221&autoLogAppEvents=1';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+
   <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+
+  <!-- BEGIN PRELOADER -->
+  <div class="loader-wrapper">
+    <div class="loader-circle"></div>
+  </div>
+  <!-- END PRELOADER -->
 
   <div id="wrapper">
 
@@ -104,7 +112,7 @@
                     <a href="#portfolio">Portfólio</a>
                   </li>
                   <li>
-                    <a href="#contato">Contato</a>
+                    <a href="/contato">Contato</a>
                   </li>
                 </ul>
               </nav>
@@ -671,7 +679,7 @@
           <div class="row">
             <div class="col-md-6 col-md-offset-3" style="text-align:center">
               <h3 style="margin-top:40px;">Está gostando do que está vendo? Então nos envie uma mensagem</h3>
-              <a href="/contato" class="btn btn-primary btn-bordeblue btn-lg icon-left-effect m-t-20 go-next">
+              <a href="/contato" class="btn btn-primary btn-bordeblue btn-lg icon-left-effect m-t-20">
                 <i class="nc-icon-outline design_pen-23"></i>
                 <span>Entrar em Contato</span>
               </a>
