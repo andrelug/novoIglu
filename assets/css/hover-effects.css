@@ -15,7 +15,7 @@ figure figcaption, figure h3, figure h4, figure p {margin-top: 0; font-weight: 3
 figure:hover figcaption, figure:hover h3, figure:hover h4, figure:hover p {text-shadow:none;}
 figure h3 span, figure h4 span {font-weight: 600;}
 figure h3 a, figure h4 a {color:#fff;font-weight: 600;text-decoration: none;}
-[data-link]{cursor:pointer;}
+/*[data-link]{cursor:pointer;} */
 
 /* Tags */
 .tags span {color:#fff;font-size: 1rem;font-weight: normal;}

@@ -411,6 +411,7 @@ function handleLinks(){
             });
         }
     });
+    /*
     $('[data-link]').click(function() {
         var targetLink = $(this).data('link');
         if (targetLink !== undefined && targetLink !== '#') {
@@ -419,6 +420,7 @@ function handleLinks(){
             });
         }
     });
+    */
 }
 
 // CHECK MENU CATEGORIES
