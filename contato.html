@@ -111,7 +111,11 @@
                 <div class="title title-center m-t-0">
                   <h3>Nos envie uma <span class="c-primary">mensagem</span></h3>
                 </div>
-                <form role="form" id="contactForm" data-toggle="validator" netlify name="Contato Webiste" action="https://www.igluonline.com/obrigado-pelo-contato">
+                <form role="form" id="contactForm" data-toggle="validator" name="Contato Webiste" method="POST">
+                  <input type="hidden" name="_next" value="https://www.igluonline.com/obrigado-pelo-contato" />
+                  <input type="hidden" name="_subject" value="Contato Websites Igluonline" />
+                  <input type="hidden" name="_language" value="pt-BR" />
+                  <input type="text" name="_gotcha" style="display:none" />
                   <div class="row">
                     <div class="col-sm-6">
                       <div class="form-group required">
@@ -144,6 +148,10 @@
                     <div id="msgSubmit" class="hidden"></div>
                   </div>
                 </form>
+                <script>
+                  var contactform =  document.getElementById('contactForm');
+                  contactform.setAttribute('action', '//formspree.io/' + 'andre' + '@' + 'igluonline' + '.' + 'com');
+              </script>
               </div>
             </div>
           </div>
